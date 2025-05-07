@@ -2,19 +2,15 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Formulario de Cadastro</title>
+    <title>Formulário</title>
   </head>
+
   <body>
     <div class="container">
-      <div class="form-img">
+      <div class="form-image">
         <img src="assets/img/undraw_shopping_a55o (1).svg" alt="" />
       </div>
       <div class="form">
@@ -30,63 +26,66 @@
 
           <div class="input-group">
             <div class="input-box">
-              <label for="fistname">Primeiro Nome</label>
+              <label for="firstname">Primeiro Nome</label>
               <input
+                id="firstname"
                 type="text"
-                name="fistname"
-                id="fistname"
-                placeholder="Digite seu Primeiro nome"
-                required
-              />
-            </div>
-            <div class="input-box">
-              <label for="lastname">Sobrenome</label>
-              <input
-                type="text"
-                name="lastname"
-                id="lastname"
-                placeholder="Digite seu Sobrenome"
+                name="firstname"
+                placeholder="Digite seu primeiro nome"
                 required
               />
             </div>
 
             <div class="input-box">
-              <label for="email">E-mail</label>
+              <label for="lastname">Sobrenome</label>
               <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Digite seu Email"
+                id="lastname"
+                type="text"
+                name="lastname"
+                placeholder="Digite seu sobrenome"
                 required
               />
             </div>
             <div class="input-box">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+
+            <div class="input-box">
               <label for="number">Celular</label>
               <input
+                id="number"
                 type="tel"
                 name="number"
-                id="number"
                 placeholder="(xx) xxxx-xxxx"
                 required
               />
             </div>
+
             <div class="input-box">
               <label for="password">Senha</label>
               <input
+                id="password"
                 type="password"
                 name="password"
-                id="password"
-                placeholder="Digite sua Senha"
+                placeholder="Digite sua senha"
                 required
               />
             </div>
+
             <div class="input-box">
-              <label for="confirmpassword">Confirme sua Senha</label>
+              <label for="confirmPassword">Confirme sua Senha</label>
               <input
+                id="confirmPassword"
                 type="password"
-                name="confirmpassword"
-                id="confirmpassword"
-                placeholder="Confirme sua Senha"
+                name="confirmPassword"
+                placeholder="Digite sua senha novamente"
                 required
               />
             </div>
@@ -94,23 +93,27 @@
 
           <div class="gender-inputs">
             <div class="gender-title">
-              <h6>Gêneros</h6>
+              <h6>Gênero</h6>
             </div>
+
             <div class="gender-group">
               <div class="gender-input">
-                <input type="radio" name="gender" id="female" />
-                <label for="female">Femenino</label>
+                <input id="female" type="radio" name="gender" />
+                <label for="female">Feminino</label>
               </div>
+
               <div class="gender-input">
-                <input type="radio" name="gender" id="male" />
+                <input id="male" type="radio" name="gender" />
                 <label for="male">Masculino</label>
               </div>
+
               <div class="gender-input">
-                <input type="radio" name="gender" id="others" />
+                <input id="others" type="radio" name="gender" />
                 <label for="others">Outros</label>
               </div>
+
               <div class="gender-input">
-                <input type="radio" name="gender" id="none" />
+                <input id="none" type="radio" name="gender" />
                 <label for="none">Prefiro não dizer</label>
               </div>
             </div>
